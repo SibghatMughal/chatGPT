@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ECF0F9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Custom class to hide vertical scrollbar */
+.hide-vertical-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer */
+}
+
+/* Hide scrollbar for Webkit (Chrome, Safari) */
+.hide-vertical-scrollbar::-webkit-scrollbar {
+  width: 0.1rem;
+}
+
+.hide-vertical-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.hide-vertical-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Add desired styles for scrolling content */
+.hide-vertical-scrollbar {
+  overflow-y: auto;
+  /* Add other styles here, such as max-height, padding, etc. */
+}
+
+Link{
+  text-decoration: none;
+  color: black;
+}
